@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="239.879" tests="12" skipped="0" failures="12" errors="0">
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.1" time="26.261">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //button[.='OK!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59564/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43be3c149f823d03836c7a6470f0ae14">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[.='OK!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59564/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43be3c149f823d03836c7a6470f0ae14
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForConfirmOkButton(SupplierSteps.java:108)
+	at ✽.Wait for confirm ok button with "xpath" as "//button[.='OK!']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............passed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".passed
+When enter password with "id" as "password" and testdata as "master"........passed
+Then click login button with "xpath" as "//button[text()='Login']"..........passed
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........passed
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..passed
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....passed
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".passed
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".passed
+When wait for capture supplier number with "id" as "x_Supplier_Number"......passed
+Then capture supplier number with "id" as "x_Supplier_Number"...............passed
+When Enter in "Mahendar" with "id" as "x_Supplier_Name".....................passed
+When Enter in "Balapur" with "id" as "x_Address"............................passed
+When Enter in "Hyderabad" with "id" as "x_City".............................passed
+When Enter in "India" with "id" as "x_Country"..............................passed
+When Enter in "Radhika" with "id" as "x_Contact_Person".....................passed
+When Enter in "8734567890" with "id" as "x_Phone_Number"....................passed
+When Enter in "Lp6K@example.com" with "id" as "x__Email"....................passed
+When Enter in "3456544443" with "id" as "x_Mobile_Number"...................passed
+When Enter in "Hi All" with "id" as "x_Notes"...............................passed
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........passed
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........failed
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.2" time="17.91">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59593/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f4afe34ce56bd3fe0fb94c4eb5d068e">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59593}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59593/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f4afe34ce56bd3fe0fb94c4eb5d068e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Ravindar" with "id" as "x_Supplier_Name".....................skipped
+When Enter in "Allire" with "id" as "x_Address".............................skipped
+When Enter in "Mysore" with "id" as "x_City"................................skipped
+When Enter in "India" with "id" as "x_Country"..............................skipped
+When Enter in "Pavithra" with "id" as "x_Contact_Person"....................skipped
+When Enter in "9871940281" with "id" as "x_Phone_Number"....................skipped
+When Enter in "Q123@example.com" with "id" as "x__Email"....................skipped
+When Enter in "2901739270" with "id" as "x_Mobile_Number"...................skipped
+When Enter in "Hi Any" with "id" as "x_Notes"...............................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.3" time="22.636">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59623/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9aa333376df899769b4936edf915b3de">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59623/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9aa333376df899769b4936edf915b3de
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "John" with "id" as "x_Supplier_Name".........................skipped
+When Enter in "123 Main St" with "id" as "x_Address"........................skipped
+When Enter in "Anytown" with "id" as "x_City"...............................skipped
+When Enter in "USA" with "id" as "x_Country"................................skipped
+When Enter in "Sarah" with "id" as "x_Contact_Person".......................skipped
+When Enter in "555-123-4567" with "id" as "x_Phone_Number"..................skipped
+When Enter in "john@example.com" with "id" as "x__Email"....................skipped
+When Enter in "555-987-6543" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Hello" with "id" as "x_Notes"................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.4" time="20.155">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59648}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59648/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be3b1f80b0fd31cf219e7fd416812a7a">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59648}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59648/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be3b1f80b0fd31cf219e7fd416812a7a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Emily" with "id" as "x_Supplier_Name"........................skipped
+When Enter in "456 Elm St" with "id" as "x_Address".........................skipped
+When Enter in "Springfield" with "id" as "x_City"...........................skipped
+When Enter in "USA" with "id" as "x_Country"................................skipped
+When Enter in "Michael" with "id" as "x_Contact_Person".....................skipped
+When Enter in "555-555-5555" with "id" as "x_Phone_Number"..................skipped
+When Enter in "emily@example.com" with "id" as "x__Email"...................skipped
+When Enter in "555-123-4567" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Bye" with "id" as "x_Notes"..................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.5" time="15.238">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59674}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59674/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1aa7885beaca0793353d9e72ea315d0c">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59674}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59674/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1aa7885beaca0793353d9e72ea315d0c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "David" with "id" as "x_Supplier_Name"........................skipped
+When Enter in "789 Oak St" with "id" as "x_Address".........................skipped
+When Enter in "Oakville" with "id" as "x_City"..............................skipped
+When Enter in "Canada" with "id" as "x_Country".............................skipped
+When Enter in "Jennifer" with "id" as "x_Contact_Person"....................skipped
+When Enter in "555-999-8888" with "id" as "x_Phone_Number"..................skipped
+When Enter in "david@example.com" with "id" as "x__Email"...................skipped
+When Enter in "555-222-3333" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Hey" with "id" as "x_Notes"..................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.6" time="16.185">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59700}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59700/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86a8f0fb9990f5013c8c4b3bbb370741">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59700}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59700/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86a8f0fb9990f5013c8c4b3bbb370741
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Samantha" with "id" as "x_Supplier_Name".....................skipped
+When Enter in "321 Pine St" with "id" as "x_Address"........................skipped
+When Enter in "Pineville" with "id" as "x_City".............................skipped
+When Enter in "USA" with "id" as "x_Country"................................skipped
+When Enter in "Alex" with "id" as "x_Contact_Person"........................skipped
+When Enter in "555-111-2222" with "id" as "x_Phone_Number"..................skipped
+When Enter in "samantha@example.com" with "id" as "x__Email"................skipped
+When Enter in "555-333-4444" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Nice" with "id" as "x_Notes".................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.7" time="16.627">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59728/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ee60f28a06af94e60151aa721979eb2">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59728/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ee60f28a06af94e60151aa721979eb2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Robert" with "id" as "x_Supplier_Name".......................skipped
+When Enter in "654 Maple St" with "id" as "x_Address".......................skipped
+When Enter in "Mapleton" with "id" as "x_City"..............................skipped
+When Enter in "Canada" with "id" as "x_Country".............................skipped
+When Enter in "Michelle" with "id" as "x_Contact_Person"....................skipped
+When Enter in "555-777-8888" with "id" as "x_Phone_Number"..................skipped
+When Enter in "robert@example.com" with "id" as "x__Email"..................skipped
+When Enter in "555-666-9999" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Buddy" with "id" as "x_Notes"................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.8" time="20.579">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59754/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 622696d3d7fda51def9215718907b737">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59754/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 622696d3d7fda51def9215718907b737
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Sarah" with "id" as "x_Supplier_Name"........................skipped
+When Enter in "987 Cedar St" with "id" as "x_Address".......................skipped
+When Enter in "Cedarville" with "id" as "x_City"............................skipped
+When Enter in "USA" with "id" as "x_Country"................................skipped
+When Enter in "Kevin" with "id" as "x_Contact_Person".......................skipped
+When Enter in "555-222-3333" with "id" as "x_Phone_Number"..................skipped
+When Enter in "sarah@example.com" with "id" as "x__Email"...................skipped
+When Enter in "555-444-5555" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Good" with "id" as "x_Notes".................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.9" time="23.365">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59782/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de7d7dc4bc6a1d0db73086b39c9fea68">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59782/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de7d7dc4bc6a1d0db73086b39c9fea68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Michael" with "id" as "x_Supplier_Name"......................skipped
+When Enter in "741 Birch St" with "id" as "x_Address".......................skipped
+When Enter in "Birchwood" with "id" as "x_City".............................skipped
+When Enter in "Canada" with "id" as "x_Country".............................skipped
+When Enter in "Amanda" with "id" as "x_Contact_Person"......................skipped
+When Enter in "555-444-5555" with "id" as "x_Phone_Number"..................skipped
+When Enter in "michael@example.com" with "id" as "x__Email".................skipped
+When Enter in "555-888-7777" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Done" with "id" as "x_Notes".................................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.10" time="16.653">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59808/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b890572563232e88049b5afe1dc5f581">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59808/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b890572563232e88049b5afe1dc5f581
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Jennifer" with "id" as "x_Supplier_Name".....................skipped
+When Enter in "852 Spruce St" with "id" as "x_Address"......................skipped
+When Enter in "Sprucetown" with "id" as "x_City"............................skipped
+When Enter in "USA" with "id" as "x_Country"................................skipped
+When Enter in "Matthew" with "id" as "x_Contact_Person".....................skipped
+When Enter in "555-666-7777" with "id" as "x_Phone_Number"..................skipped
+When Enter in "jennifer@example.com" with "id" as "x__Email"................skipped
+When Enter in "555-555-5555" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Hey Man" with "id" as "x_Notes"..............................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.11" time="16.241">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccf6851581d5fecc0d11a1818224e214">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='username'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59861/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccf6851581d5fecc0d11a1818224e214
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForUsername(SupplierSteps.java:29)
+	at ✽.wait for username with "xpath" as "//input[@id='username']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............failed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".skipped
+When enter password with "id" as "password" and testdata as "master"........skipped
+Then click login button with "xpath" as "//button[text()='Login']"..........skipped
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........skipped
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..skipped
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....skipped
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".skipped
+When wait for capture supplier number with "id" as "x_Supplier_Number"......skipped
+Then capture supplier number with "id" as "x_Supplier_Number"...............skipped
+When Enter in "Alex" with "id" as "x_Supplier_Name".........................skipped
+When Enter in "963 Oak St" with "id" as "x_Address".........................skipped
+When Enter in "Oakdale" with "id" as "x_City"...............................skipped
+When Enter in "Canada" with "id" as "x_Country".............................skipped
+When Enter in "Stephanie" with "id" as "x_Contact_Person"...................skipped
+When Enter in "555-888-9999" with "id" as "x_Phone_Number"..................skipped
+When Enter in "alex@example.com" with "id" as "x__Email"....................skipped
+When Enter in "555-999-8888" with "id" as "x_Mobile_Number".................skipped
+When Enter in "Iam good" with "id" as "x_Notes".............................skipped
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........skipped
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="As an admin user validate supplier creation with multiple data" name="As Admin user add supplier - Example #1.12" time="26.708">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of element located by By.xpath: //button[.='OK!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59928/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc10757c80220bf6234988e87235d548">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[.='OK!'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.111 (9d4c1072da6..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59928/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc10757c80220bf6234988e87235d548
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:43)
+	at gluecode.SupplierSteps.waitForConfirmOkButton(SupplierSteps.java:108)
+	at ✽.Wait for confirm ok button with "xpath" as "//button[.='OK!']"(file:///D:/SDET%20WORKSPACE/org.qedge.cucumber/cucumber/src/test/resources/features/Supplier.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch Browser........................................................passed
+When Launch Url "http://webapp.qedgetech.com/"..............................passed
+Then wait for username with "xpath" as "//input[@id='username']"............passed
+When enter username with "xpath" as "//input[@id='username']" and testdata as "admin".passed
+When enter password with "id" as "password" and testdata as "master"........passed
+Then click login button with "xpath" as "//button[text()='Login']"..........passed
+When wait for logout link with "xpath" as "//li[@id='mi_logout']/a".........passed
+When wait for supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a"..passed
+Then click supplier link with "xpath" as "//li[@id='mi_a_suppliers']/a".....passed
+When wait for Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".passed
+Then click on Add + icon with "xpath" as "(//span[@data-caption='Add'])[1]/..".passed
+When wait for capture supplier number with "id" as "x_Supplier_Number"......passed
+Then capture supplier number with "id" as "x_Supplier_Number"...............passed
+When Enter in "Michelle" with "id" as "x_Supplier_Name".....................passed
+When Enter in "159 Elm St" with "id" as "x_Address".........................passed
+When Enter in "Elmvale" with "id" as "x_City"...............................passed
+When Enter in "USA" with "id" as "x_Country"................................passed
+When Enter in "Daniel" with "id" as "x_Contact_Person"......................passed
+When Enter in "555-777-6666" with "id" as "x_Phone_Number"..................passed
+When Enter in "michelle@example.com" with "id" as "x__Email"................passed
+When Enter in "555-222-1111" with "id" as "x_Mobile_Number".................passed
+When Enter in "HIIII" with "id" as "x_Notes"................................passed
+Then click on Add button with "xpath" as "//button[@id='btnAction']"........passed
+When Wait for confirm ok button with "xpath" as "//button[.='OK!']".........failed
+Then click on confirm ok button with "xpath" as "//button[.='OK!']".........skipped
+When wait for alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then click on alert with "xpath" as "(//button[text()='OK'])[6]"............skipped
+Then user validate the supplier table.......................................skipped
+Then user closes the browser................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
